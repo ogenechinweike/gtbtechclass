@@ -1,6 +1,7 @@
 let topStories = document.querySelectorAll('h2.rtp-slide-title > a');
+let response = {};
 
 for (let count = 0; count < topStories.length; count++) {
-    document.write(topStories[count].textContent);
-    document.write("<br />");
+    response[count] = topStories[count].textContent;
 }
+document.write(JSON.stringify(response));
