@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+  <body>
+     <script>
+          let datas = document.querySelectorAll("h2.rtp-cat-post-title>a");
+          let response = {};
+          for(let count = 0; count < datas.length; count++){
+          response[count] = datas[count].textContent;
+          }
+          document.write(JSON.stringify(response))
+     </script>
+  </body>
+</html>
