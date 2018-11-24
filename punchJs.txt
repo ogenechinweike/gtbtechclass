@@ -1,0 +1,6 @@
+topStories74 = document.querySelectorAll('h3');
+
+for (count = 0; count < topStories74.length; count++) {
+    document.write(topStories74[count].textContent);
+    document.write("<br />");
+}
