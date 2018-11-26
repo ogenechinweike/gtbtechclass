@@ -1,0 +1,41 @@
+
+GUARDIAN HEADLINE EXTRACTED DATA CODE
+
+document.querySelectorAll('span.title > a');
+
+let topStories = document.querySelectorAll('span.title > a');
+
+let response = {};
+
+for (count = 0; count < topStories.length; count ++){
+
+     
+response[count] = topStories[count].textContent;
+
+}
+
+
+
+document.write(JSON.stringify(response));
+
+
+
+
+PUNCH HEADLINE EXTRACTED DATA CODE
+
+document.querySelectorAll('span.title > a');
+
+let topStories = document.querySelectorAll('span.title > a');
+
+let response = {};
+
+for (count = 0; count < topStories.length; count ++){
+
+     
+response[count] = topStories[count].textContent;
+
+}
+
+
+
+document.write(JSON.stringify(response));
