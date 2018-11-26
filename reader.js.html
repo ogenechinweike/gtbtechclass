@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let topStories= document.querySelectorAll("h3");
+        let response = {};
+        for (let count = 0; count<topStories.length; count++){
+	        response[count] = topStories[count].textContent;
+        }
+        document.write(JSON.stringify(response));
+    </script>
+</body>
+</html>
