@@ -1,0 +1,14 @@
+		//displays all the current news at the punch website 
+		topStories = document.querySelectorAll("h3")
+		for(let count =0; count < topStories.length; count++){
+			document.writeln(topStories[count].textContent);
+		}
+
+
+		//displays all the current news at the punch website in an Object format
+		topStories = document.querySelectorAll("h3");
+		response = {};
+		for(let count =0; count < topStories.length; count++){
+		    response[count] = topStories[count].textContent;
+		}
+		document.writeln(JSON.stringify(response));
